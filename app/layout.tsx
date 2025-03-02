@@ -55,6 +55,9 @@ export default function RootLayout({
             </div>
           </header>
           <main>{children}</main>
+          <footer className="py-8 text-center font-mono dark:text-green-400 text-indigo-800">
+            © 2025 Pixel Wisdom. All rights pixelated.
+          </footer>
         </div>
       </body>
     </html>
