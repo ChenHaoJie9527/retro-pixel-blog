@@ -3,6 +3,7 @@ import { Press_Start_2P, VT323 } from "next/font/google";
 import PixelatedBackground from "components/PixelatedBackground";
 import ColorfulPixelLogo from "components/ColorfulPixelLogo";
 import BlinkingCursor from "components/BlinkingCursor";
+import NavMenu from "components/NavMenu";
 import "./globals.css";
 
 const pressStart2p = Press_Start_2P({
@@ -44,6 +45,7 @@ export default function RootLayout({
               <span>Tech • Art • Finance</span>
               <BlinkingCursor />
             </p>
+            <NavMenu />
           </header>
           <main>{children}</main>
         </div>
