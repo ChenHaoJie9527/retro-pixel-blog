@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, VT323 } from "next/font/google";
-import PixelatedBackground from "@/components/PixelatedBackground";
+import PixelatedBackground from "components/PixelatedBackground";
+import ColorfulPixelLogo from "components/ColorfulPixelLogo";
 import "./globals.css";
 
 const pressStart2p = Press_Start_2P({
@@ -31,7 +32,13 @@ export default function RootLayout({
         className={`${pressStart2p.variable} ${vt323.variable} font-sans bg-gray-900 text-gray-400 dark:bg-gray-900 dark:text-green-400`}
       >
         <PixelatedBackground />
-        {children}
+        <div className="max-w-4xl mx-auto px-4">
+          <header className="py-8 flex flex-col items-center">
+            {/* 快速变化： 500ms变化一次 200ms过渡 */}
+            <ColorfulPixelLogo frameInterval={800} transitionDuration={200} />
+          </header>
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
