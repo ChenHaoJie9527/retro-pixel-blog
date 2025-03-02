@@ -37,8 +37,13 @@ body {
 }
 
 /* Pixelated border effect */
-.pixelated-border {
+.dark .pixelated-border {
   box-shadow: 0 0 0 2px #4ade80, 0 0 0 4px #000, 0 0 0 6px #4ade80;
+}
+
+/* 亮色模式的像素化边框 */
+ .pixelated-border-light {
+  box-shadow: 0 0 0 2px #6366f1, 0 0 0 4px #fff, 0 0 0 6px #6366f1;
 }
 
 @layer utilities {

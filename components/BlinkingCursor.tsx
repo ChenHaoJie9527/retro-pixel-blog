@@ -15,7 +15,7 @@ const BlinkingCursor = () => {
 
   return (
     <span
-      className={`inline-block w-3 h-5 bg-green-400 ${
+      className={`inline-block w-3 h-5 dark:bg-green-400 bg-indigo-800 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     />

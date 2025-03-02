@@ -4,6 +4,8 @@ import PixelatedBackground from "components/PixelatedBackground";
 import ColorfulPixelLogo from "components/ColorfulPixelLogo";
 import BlinkingCursor from "components/BlinkingCursor";
 import NavMenu from "components/NavMenu";
+import ThemeToggle from "components/ThemeToggle";
+
 import "./globals.css";
 
 const pressStart2p = Press_Start_2P({
@@ -31,7 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${pressStart2p.variable} ${vt323.variable} font-sans bg-gray-900 text-green-400 dark:bg-gray-900 dark:text-green-400`}
+        className={`${pressStart2p.variable} ${vt323.variable} font-sans 
+          dark:bg-gray-900 dark:text-green-400 
+          bg-blue-50 text-indigo-800`}
       >
         <PixelatedBackground />
         <div className="max-w-4xl mx-auto px-4">
@@ -46,6 +50,9 @@ export default function RootLayout({
               <BlinkingCursor />
             </p>
             <NavMenu />
+            <div className="mt-4">
+              <ThemeToggle />
+            </div>
           </header>
           <main>{children}</main>
         </div>

@@ -17,7 +17,7 @@ function PostCard({ post }: PostCardProps) {
       className="block p-6 bg-gray-800 hover:bg-gray-700 transition-colors rounded-lg"
     >
       <h4 className="text-lg font-pixel mb-2">{item2.title}</h4>
-      <span className="inline-block px-2 py-1 font-bold rounded text-black font-mono text-sm bg-green-600">
+      <span className="inline-block px-2 py-1 font-bold rounded dark:text-black font-mono text-sm dark:bg-green-600 text-white bg-indigo-800">
         {item2.category}
       </span>
     </Link>
