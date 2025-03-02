@@ -7,7 +7,7 @@ export default function NotFound() {
             <p className="font-mono mb-4">The page you're looking for is in another castle!</p>
             <Link
                 href="/"
-                className="font-pixel bg-notgreen-600 text-black px-4 py-2 rounded hover:bg-green-500 transition-colors"
+                className="font-pixel bg-notgreen-600 text-white px-4 py-2 rounded hover:bg-green-500 transition-colors"
             >
                 Continue?
             </Link>

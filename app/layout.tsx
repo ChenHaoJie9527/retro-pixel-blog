@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Press_Start_2P, VT323 } from "next/font/google"
+import { Press_Start_2P, VT323 } from "next/font/google";
+import PixelatedBackground from "@/components/PixelatedBackground";
 import "./globals.css";
 
 const pressStart2p = Press_Start_2P({
@@ -13,8 +14,6 @@ const vt323 = VT323({
   subsets: ["latin"],
   variable: "--font-vt323",
 });
-
-
 
 export const metadata: Metadata = {
   title: "Retro Pixel Blog",
@@ -31,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${pressStart2p.variable} ${vt323.variable} font-sans bg-gray-900 text-gray-400 dark:bg-gray-900 dark:text-green-400`}
       >
+        <PixelatedBackground />
         {children}
       </body>
     </html>
